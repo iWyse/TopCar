@@ -636,6 +636,10 @@ input[type=checkbox] {
   margin: 126px 0px 48px 0px;
 }
 
+.hero__button {
+  padding-bottom: 50px;
+}
+
 .menu-body {
   display: -webkit-box;
   display: -ms-flexbox;
