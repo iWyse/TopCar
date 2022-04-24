@@ -1987,6 +1987,22 @@ body {
     gap: 10px;
   }
 
+  .about__container {
+    background: none;
+  }
+
+@supports (padding-top: clamp( 1.25rem , -0.9417808219rem  +  10.9589041096vw , 6.25rem )) {
+    .about__container {
+      padding-top: clamp( 1.25rem , -0.9417808219rem  +  10.9589041096vw , 6.25rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.25rem , -0.9417808219rem  +  10.9589041096vw , 6.25rem )) {
+    .about__container {
+      padding-top: calc(1.25rem + 5 * (100vw - 20rem) / 45.625);
+    }
+}
+
   .frame__content {
     top: 20%;
     right: 5%;
