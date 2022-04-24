@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TopCar Autoservice</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220424221008">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20220424221008" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<section class="header-top">
+					<h2 class="header__logo">
+						<a href="#"><img src="img/main/logo.svg" alt="logo company"></a>
+					</h2>
+					<div class="header__items header-item">
+						<div class="header-item">
+							<div class="header-item__icon _icon-time"></div>
+							<h2 class="header-item__title">service hours</h2>
+							<p class="header-item__datetime">Mon - Sat: 7:00 am - 6:00 pm</p>
+						</div>
+						<div class="header-item">
+							<div class="header-item__icon _icon-phone"></div>
+							<h2 class="header-item__title">call us</h2>
+							<a href="tel:89180505055" class="header-item__number">(555) Car-Repair</a>
+						</div>
+					</div>
+					<button type="submit" class="header__button button">Make an Appointment</button>
+				</section>
+				<section class="header-nav">
+					<div class="menu-body">
+						<div class="overlay"></div>
+						<nav class="menu" id="menu">
+							<div class="menu-mobile-header">
+								<button type="button" class="menu-mobile-arrow"><i class="ion _icon-close-arrow-back"></i></button>
+								<div class="menu-mobile-title"></div>
+								<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+							</div>
+							<ul class="menu-list">
+								<li class="menu-item-has-children">
+									<a href="#">Services<i class="ion _icon-close-arrow-back"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="#" data-goto=".appointment">Multi Point Inspections</a></li>
+											<li><a href="#" data-goto=".impact">Auto Repair</a></li>
+											<li><a href="#" data-goto=".footer">Tires</a></li>
+											<li><a href="#" data-goto=".services">Service Warranty</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item"><a href="#" data-goto=".impact">Specials</a></li>
+								<li class="menu-item"><a href="#" data-goto=".customers">Estimates</a></li>
+								<li class="menu-item"><a href="#" data-goto=".gallery">Reviews</a></li>
+								<li class="menu-item-has-children">
+									<a>Shop<i class="ion _icon-close-arrow-back"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li class="menu-item"><a href="#" data-goto=".about">Engine details</a></li>
+											<li class="menu-item"><a href="#" data-goto=".frame">Transmission details</a></li>
+											<li class="menu-item"><a href="#" data-goto=".appointment">Tuning</a></li>
+											<li class="menu-item"><a href="#" data-goto=".popup">Wheels</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item"><a class="menu-link" data-goto=".about" href="#">About</a></li>
+								<div class="menu__button">
+									<button type="submit" class="button">Make an Appointment</button>
+								</div>
+							</ul>
+						</nav>
+						<button type="button" class="menu-mobile-toggle _icon-burger"></button>
+					</div>
+					<input type="checkbox" id="show-search">
+					<form action="#" class="search-box">
+						<input class="input__text" type="text" maxlength="75" placeholder="Type Something to Search" required>
+						<button type="submit" class="go-icon _icon-arrow-btn"></button>
+					</form>
+					<div class="header__actions header-action">
+						<label for="show-search" class="show-search"><i class="search-icon _icon-search"></i></label>
+						<a href="#" class="header-action__shop _icon-shopping-cart"><span class="header-action__counter">2
+							</span></a>
+					</div>
+				</section>
+				<section class="hero">
+					<h1 class="hero__title main__title">Top notch service is our main auto motive</h1>
+					<button type="submit" class="button">Make an Appointment</button>
+				</section>
+			</div>
+		</header>
+		<main class="page">
+			<section class="about">
+				<div class="about__container">
+					<div class="about-item">
+						<h2 class="about-item__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">Who we are</h2>
+						<h3 class="about-item__subtitle subtitle">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
+						<p class="about-item__text text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+							suscipit
+							laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in
+							ea
+							voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+							voluptas
+							nulla pariatur.</p>
+						<div class="about-item__image">
+							<picture><source srcset="img/about/about.webp" type="image/webp"><img src="img/about/about.jpg" alt="Engine"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">our
+						promise to you
+					</h2>
+					<h3 class="advantages__subtitle subtitle">Sed perspiciatis omnis iste natus</h3>
+					<div class="advantages-items">
+						<div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" class="advantages-item">
+							<img src="img/advantages/quality.svg" alt="advantages image">
+							<div class="advantages-item__content content-item">
+								<h4 class="content-item__title">Quality service. Everytime.</h4>
+								<p class="content-item__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</p>
+							</div>
+						</div>
+						<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="advantages-item">
+							<img src="img/advantages/certified.svg" alt="advantages image">
+							<div class="advantages-item__content content-item">
+								<h4 class="content-item__title">Quality service. Everytime.</h4>
+								<p class="content-item__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</p>
+							</div>
+						</div>
+						<div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1200" class="advantages-item">
+							<img src="img/advantages/honest.svg" alt="advantages image">
+							<div class="advantages-item__content content-item">
+								<h4 class="content-item__title">Quality service. Everytime.</h4>
+								<p class="content-item__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="frame">
+				<div class="frame__wrapper">
+					<div class="video" data-src="https://www.youtube.com/embed/zGkfiZptQM8?autoplay=1">
+						<div class="frame__content">
+							<h2 class="frame__content-title subtitle">Nemo enim ipsam voluptatem quia
+								voluptas in proident
+							</h2>
+							<i class="frame__play _icon-play"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<h2 class="services__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">Our Services</h2>
+					<h3 class="services__subtitle subtitle">Sed perspiciatis omnis iste natus</h3>
+					<ul class="services-card__list">
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/bay.svg" class="services-card__icon" alt="icon Multi Point Inspections">
+							<h4 class="services-card__title">Multi Point Inspections</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/engine.svg" class="services-card__icon" alt="icon Auto Repair">
+							<h4 class="services-card__title">Auto Repair</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/breaks.svg" class="services-card__icon" alt="icon Auto Maintenance">
+							<h4 class="services-card__title">Auto Maintenance</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/tires.svg" class="services-card__icon" alt="icon Tires">
+							<h4 class="services-card__title">Tires</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/check.svg" class="services-card__icon" alt="icon Service Warranty">
+							<h4 class="services-card__title">Service Warranty</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+						<li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="services-card__item">
+							<img src="img/services/shopping.svg" class="services-card__icon" alt="icon Shop Online">
+							<h4 class="services-card__title">Shop Online</h4>
+							<p class="services-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+								blanditiis praesentium corrupti quos dolores et quas.</p>
+						</li>
+					</ul>
+					<button type="submit" class="services__button button">Learn More</button>
+				</div>
+			</section>
+			<section class="appointment">
+				<div class="appointment__container">
+					<div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" class="appointment-body">
+						<h2 class="appointment-body__title subtitle">Make an appointment</h2>
+						<form action="#" class="appointment-form">
+							<div class="appointment-form__list">
+								<input class="appointment-form__name" type="text" name="username" placeholder="Name" required>
+								<input class="appointment-form__email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="email" name="email" placeholder="Email" required>
+								<input class="appointment-form__phone" name="phone" type="tel" maxlength="50" required value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7(___)___-__-__" id="number-phone">
+								<select class="appointment-form__select" name="select">
+									<option value="1" disabled="disabled">Select Service</option>
+									<option tabindex="1" value="2">Multi Point Inspections</option>
+									<option tabindex="2" value="3">Auto Repair</option>
+									<option tabindex="3" value="4">Tires</option>
+									<option tabindex="4" value="5">Service</option>
+								</select>
+								<textarea class="appointment-form__textarea" placeholder="Tell us about the car needing service(s)" name="text" id="text" cols="20" rows="7"></textarea>
+							</div>
+							<button type="submit" class="appointment__button button">Make an Appointment</button>
+						</form>
+					</div>
+					<div class="appointment-content">
+						<h3 class="appointment-content__title">Maxime placeat facere possimus omnis </h3>
+						<div class="appointment-content__counter counter" data-target="5430">235</div>
+						<p class="appointment-content__text">customers served (and counting)</p>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__container">
+					<div class="gallery-block">
+						<h2 class="gallery__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">gallery & live streams
+						</h2>
+						<h3 class="gallery__subtitle subtitle">Check out our hard workers</h3>
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title ">Gallery</button>
+								<button type="button" class="tabs__title _tab-active _tab-live">Live stream: Bay 1</button>
+								<button type="button" class="tabs__title _tab-live">Live stream: Bay 2</button>
+								<button type="button" class="tabs__title _tab-offline">Live stream: Bay 3</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<picture><source srcset="img/gallery/gallery-1.webp" type="image/webp"><img src="img/gallery/gallery-1.jpg" alt="image on gallery"></picture>
+								</div>
+								<div class="tabs__body live-mode">
+									<picture><source srcset="img/gallery/gallery-2.webp" type="image/webp"><img src="img/gallery/gallery-2.jpg" alt="image on gallery"></picture>
+								</div>
+								<div class="tabs__body live-mode">
+									<picture><source srcset="img/gallery/gallery-3.webp" type="image/webp"><img src="img/gallery/gallery-3.jpg" alt="image on gallery"></picture>
+								</div>
+								<div class="tabs__body ">
+									<picture><source srcset="img/gallery/gallery-4.webp" type="image/webp"><img src="img/gallery/gallery-4.jpg" alt="image on gallery"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="customers">
+				<ul class="customers__container">
+					<li class="customers__list">
+						<h2 class="customers__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">Our customers</h2>
+						<h3 class="customers__subtitle subtitle">Illum qui dolorem eum quo voluptas ut distinctio</h3>
+					</li>
+					<li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" class="customers__list">
+						<div class="customers__item custom-item">
+							<p class="custom-item__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+								quis ea exercitation ullamco cillum ut enim dolore.”</p>
+							<div class="custom-item__person">
+								<picture><source srcset="img/testimonials/image-1.webp" type="image/webp"><img src="img/testimonials/image-1.png" class="custom-item__photo" alt="person photo"></picture>
+								<h4 class="custom-item__name">Cullen Bohannon</h4>
+							</div>
+						</div>
+					</li>
+					<li data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1200" class="customers__list">
+						<div class="customers__item custom-item">
+							<p class="custom-item__text">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+								veritatis et quasi ipsam voluptatem aspernatur.”</p>
+							<div class="custom-item__person">
+								<picture><source srcset="img/testimonials/image-2.webp" type="image/webp"><img src="img/testimonials/image-2.png" class="custom-item__photo" alt="person photo"></picture>
+								<h4 class="custom-item__name">Jennifer Thomas</h4>
+							</div>
+						</div>
+	</div>
+	</ul>
+	</section>
+	<section class="impact">
+		<div class="impact__container">
+			<div class="impact__wrapper">
+				<div class="impact__desc">
+					<h2 class="impact__title section__title"><img src="img/main/overline-mark.svg" alt="icon for title">our
+						impact</h2>
+					<h3 class="impact__subtitle subtitle">Nemo enim ipsam voluptatem quia voluptas</h3>
+				</div>
+				<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200" class="impact__image">
+					<picture><source srcset="img/impact/impact-img.webp" type="image/webp"><img src="img/impact/impact-img.jpg" alt="image car"></picture>
+				</div>
+			</div>
+			<ul class="impact-stats">
+				<li class="impact-stats__item">
+					<img class="impact-stats__icon" src="img/stats/oil.svg" alt="icon Oil changes">
+					<div class="impact-stats__content">
+						<h4 class="impact-stats__counter">16k+</h4>
+						<p class="impact-stats__title">Oil changes</p>
+					</div>
+				</li>
+				<li class="impact-stats__item">
+					<img class="impact-stats__icon" src="img/stats/transmission.svg" alt="icon Transmission repairs">
+					<div class="impact-stats__content">
+						<h4 class="impact-stats__counter">13k+</h4>
+						<p class="impact-stats__title">Transmission repairs</p>
+					</div>
+				</li>
+				<li class="impact-stats__item">
+					<img class="impact-stats__icon" src="img/stats/alignment.svg" alt="icon Alignments made">
+					<div class="impact-stats__content">
+						<h4 class="impact-stats__counter">15k+</h4>
+						<p class="impact-stats__title">Alignments made</p>
+					</div>
+				</li>
+				<li class="impact-stats__item">
+					<img class="impact-stats__icon" src="img/stats/engine-v.svg" alt="icon Engines repaired">
+					<div class="impact-stats__content">
+						<h4 class="impact-stats__counter">11,5k+</h4>
+						<p class="impact-stats__title">Engines repaired</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="popup">
+			<div class="popup__container">
+				<h2 class="popup__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+				<button type="submit" class="popup__button button">Make an Appointment</button>
+			</div>
+		</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer-info">
+				<h2 class="footer-info__logo"><a href="#"><img src="img/footer/logo-footer.svg" alt="logo company"></a></h2>
+				<p class="footer-info__text">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et
+					dolore ex magna aliqua. </p>
+				<ul class="footer-info__list">
+					<li class="footer-info__item"><a href="https://www.facebook.com/" rel="nofollow noopener" target="_blank" class="footer-info__link _icon-facebook"></a></li>
+					<li class="footer-info__item"><a href="https://www.twitter.com/" rel="nofollow noopener" target="_blank" class="footer-info__link _icon-twitter"></a></li>
+					<li class="footer-info__item"><a href="https://www.instagram.com/" rel="nofollow noopener" target="_blank" class="footer-info__link _icon-instagram"></a></li>
+					<li class="footer-info__item"><a href="https://www.youtube.com/" rel="nofollow noopener" target="_blank" class="footer-info__link _icon-youtube"></a></li>
+				</ul>
+			</div>
+			<div class="footer-nav">
+				<h3 class="footer-nav__title">explore links</h3>
+				<nav class="footer-nav__body">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item"><a href="#" data-goto=".about" class="footer-nav__link">About</a></li>
+						<li class="footer-nav__item"><a href="#" data-goto=".services" class="footer-nav__link">Services</a></li>
+						<li class="footer-nav__item"><a href="#" data-goto=".advantages" class="footer-nav__link">Specials</a>
+						</li>
+						<li class="footer-nav__item"><a href="#" data-goto=".customers" class="footer-nav__link">Estimates</a>
+						</li>
+					</ul>
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item"><a href="#" data-goto=".gallery" class="footer-nav__link">Reviews</a></li>
+						<li class="footer-nav__item"><a href="#" data-goto=".header" class="footer-nav__link">Shop</a></li>
+						<li class="footer-nav__item"><a href="#" data-goto=".header" class="footer-nav__link">Careers</a></li>
+						<li class="footer-nav__item"><a href="#" data-goto=".frame" class="footer-nav__link">FAQs</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-contact">
+				<h3 class="footer-contact__title">contact</h3>
+				<ul class="footer-contact__list">
+					<li class="footer-contact__item _icon-place">321 Pikes Place Parkway
+						Seattle, WA 54321</li>
+					<li class="footer-contact__item _icon-smartphone">(555) 765-4321</li>
+					<li class="footer-contact__item _icon-email">Info@company.com</li>
+					<li class="footer-contact__item _icon-timer">Mon - Sat: 7:00 am - 6:00 pm</li>
+				</ul>
+			</div>
+		</div>
+		<div class="policy">
+			<div class="policy__container">
+				<p class="policy__text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p>
+				<div class="policy-body">
+					<p class="policy-body__company">© 2018 Company.</p>
+					<a href="#" class="policy-body__link">Privacy Policy</a>
+					<a href="#" class="policy-body__link">Terms & Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20220424221008"></script>
+	<script src="js/app.min.js?_v=20220424221008"></script>
+</body>
+
+</html>
