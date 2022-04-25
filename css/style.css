@@ -473,6 +473,14 @@ a:focus-visible,
   min-height: 60px;
 }
 
+.header-nav--fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .header__actions {
   display: -webkit-box;
   display: -ms-flexbox;

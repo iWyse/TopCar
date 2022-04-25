@@ -406,8 +406,15 @@
     const getTop = () => window.scrollY || document.documentElement.scrollTop;
     const offset = 30;
     const aboutItem = document.querySelector(".about-item");
+    const headerNav = document.querySelector(".header-nav");
     window.addEventListener("scroll", (() => {
-        if (getTop() > offset) aboutItem.classList.add("about-item-active"); else aboutItem.classList.remove("about-item-active");
+        if (getTop() > offset) {
+            aboutItem.classList.add("about-item-active");
+            headerNav.classList.add("header-nav--fixed");
+        } else {
+            aboutItem.classList.remove("about-item-active");
+            headerNav.classList.remove("header-nav--fixed");
+        }
     }));
     const scrollImations = (entries, observer) => {
         entries.forEach((entry => {
