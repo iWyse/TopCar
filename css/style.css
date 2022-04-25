@@ -734,6 +734,10 @@ input[type=checkbox] {
   transition: all 0.3s ease;
 }
 
+.menu-body .menu > ul > li .menu-subs > ul > li > a:hover {
+  color: #C40B0B;
+}
+
 .menu-body .menu > ul > li .menu-column-1 {
   min-width: 16rem;
   max-width: 20rem;
@@ -1444,6 +1448,7 @@ body {
   margin: 0px 0px 30px 0px;
   grid-column: 1/-1;
   width: 100%;
+  resize: none;
 }
 
 .appointment-content {

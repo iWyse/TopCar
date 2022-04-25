@@ -413,7 +413,7 @@
     let scrollPrev = 0;
     window.addEventListener("scroll", (() => {
         let scrolled = document.documentElement.scrollTop;
-        if (scrolled > 100 && scrolled > scrollPrev) headerNav.classList.remove("header-nav--fixed"); else headerNav.classList.add("header-nav--fixed");
+        if (scrolled > 100 && !(scrolled > scrollPrev)) headerNav.classList.add("header-nav--fixed"); else headerNav.classList.remove("header-nav--fixed");
         scrollPrev = scrolled;
     }));
     const scrollImations = (entries, observer) => {
