@@ -660,6 +660,10 @@ input[type=checkbox] {
   gap: 41px;
 }
 
+.menu-body .menu-item-home {
+  display: none;
+}
+
 .menu-body .menu > ul > li i {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2100,6 +2104,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+  }
+
+  .menu-body .menu-item-home {
+    display: block;
   }
 
   .menu__button {
