@@ -1164,6 +1164,7 @@ input[type=checkbox] {
 
 .footer-back:hover {
   background: #02133cf1;
+  color: #eee;
 }
 
 .footer-back:hover .footer-back__button:before {
