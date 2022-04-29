@@ -312,6 +312,10 @@ h6 {
   cursor: pointer;
 }
 
+.open-modal {
+  outline: none;
+}
+
 .no-webp .frame{
   background: url("../img/video/kaba.jpg") center/cover no-repeat; }
 
@@ -1152,13 +1156,63 @@ input[type=checkbox] {
   font-size: 1rem;
 }
 
+.footer-back {
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-back:hover {
+  background: #02133cf1;
+}
+
+.footer-back:hover .footer-back__button:before {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.footer-back__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.footer-back__button::before {
+  font-size: 1rem;
+  margin-right: 10px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #C40B0B;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.policy,
+.footer-back {
+  background: #02133C;
+  color: #959595;
+}
+
 .policy {
   background: #02133C;
   padding: 25px 0px;
   font-size: 0.75rem;
   line-height: 1.5;
   letter-spacing: 0.15px;
-  color: #959595;
 }
 
 .policy__container {
