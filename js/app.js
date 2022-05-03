@@ -3,12 +3,12 @@
     function isWebp() {
         function testWebP(callback) {
             let webP = new Image;
-            webP.onload = webP.onerror = function() {
+            webP.onload = webP.onerror = function () {
                 callback(2 == webP.height);
             };
             webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
         }
-        testWebP((function(support) {
+        testWebP((function (support) {
             let className = true === support ? "webp" : "no-webp";
             document.documentElement.classList.add(className);
         }));
@@ -100,7 +100,7 @@
             }));
             let mdQueriesArray = dataMediaQueries(tabs, "tabs");
             if (mdQueriesArray && mdQueriesArray.length) mdQueriesArray.forEach((mdQueriesItem => {
-                mdQueriesItem.matchMedia.addEventListener("change", (function() {
+                mdQueriesItem.matchMedia.addEventListener("change", (function () {
                     setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
                 }));
                 setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
@@ -216,6 +216,7 @@
         toggleMenu();
     }));
     function toggleMenu() {
+        if (menu.classList.contains("active")) bodyLock(); else bodyUnlock();
         menu.classList.toggle("active");
         menuOverlay.classList.toggle("active");
     }
@@ -235,7 +236,7 @@
         menu.querySelector(".menu-mobile-title").innerHTML = "";
         menu.querySelector(".menu-mobile-header").classList.remove("active");
     }
-    window.onresize = function() {
+    window.onresize = function () {
         if (this.innerWidth > 991) if (menu.classList.contains("active")) toggleMenu();
     };
     function functions_FLS(message) {
@@ -244,12 +245,12 @@
         }), 0);
     }
     function uniqArray(array) {
-        return array.filter((function(item, index, self) {
+        return array.filter((function (item, index, self) {
             return self.indexOf(item) === index;
         }));
     }
     function dataMediaQueries(array, dataSetValue) {
-        const media = Array.from(array).filter((function(item, index, self) {
+        const media = Array.from(array).filter((function (item, index, self) {
             if (item.dataset[dataSetValue]) return item.dataset[dataSetValue].split(",")[0];
         }));
         if (media.length) {
@@ -263,7 +264,7 @@
                 breakpoint.item = item;
                 breakpointsArray.push(breakpoint);
             }));
-            let mdQueries = breakpointsArray.map((function(item) {
+            let mdQueries = breakpointsArray.map((function (item) {
                 return "(" + item.type + "-width: " + item.value + "px)," + item.value + "," + item.type;
             }));
             mdQueries = uniqArray(mdQueries);
@@ -274,7 +275,7 @@
                     const mediaBreakpoint = paramsArray[1];
                     const mediaType = paramsArray[2];
                     const matchMedia = window.matchMedia(paramsArray[0]);
-                    const itemsArray = breakpointsArray.filter((function(item) {
+                    const itemsArray = breakpointsArray.filter((function (item) {
                         if (item.value === mediaBreakpoint && item.type === mediaType) return true;
                     }));
                     mdQueriesArray.push({
@@ -286,7 +287,7 @@
             }
         }
     }
-    document.querySelector(".search-icon").onclick = function(e) {
+    document.querySelector(".search-icon").onclick = function (e) {
         document.querySelector(".input__text").value = "";
     };
     AOS.init();
@@ -361,7 +362,7 @@
     setTimeout((() => {
         if (addWindowScrollEvent) {
             let windowScroll = new Event("windowScroll");
-            window.addEventListener("scroll", (function(e) {
+            window.addEventListener("scroll", (function (e) {
                 document.dispatchEvent(windowScroll);
             }));
         }
@@ -378,7 +379,7 @@
     function mask(e) {
         var matrix = this.placeholder, i = 0, def = matrix.replace(/\D/g, ""), val = this.value.replace(/\D/g, "");
         def.length >= val.length && (val = def);
-        matrix = matrix.replace(/[_\d]/g, (function(a) {
+        matrix = matrix.replace(/[_\d]/g, (function (a) {
             return val.charAt(i++) || "_";
         }));
         this.value = matrix;
@@ -386,7 +387,7 @@
         i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
         setCursorPosition(i, this);
     }
-    window.addEventListener("DOMContentLoaded", (function() {
+    window.addEventListener("DOMContentLoaded", (function () {
         var input = document.querySelector("#number-phone");
         input.addEventListener("input", mask, false);
         setCursorPosition(3, input);
@@ -439,9 +440,9 @@
     const openEls = document.querySelectorAll("[data-open]");
     const closeEls = document.querySelectorAll("[data-close]");
     const isVisible = "is-visible";
-    window.addEventListener("DOMContentLoaded", (function() {
+    window.addEventListener("DOMContentLoaded", (function () {
         let clickToFrame = document.querySelector(".frame__play");
-        clickToFrame.addEventListener("click", (function(e) {
+        clickToFrame.addEventListener("click", (function (e) {
             video.classList.add("active");
             video.innerHTML = "<iframe src=" + src + ' frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         }));
@@ -451,12 +452,12 @@
         document.documentElement.classList.remove("lock");
         video.innerHTML = null;
     }
-    for (const el of openEls) el.addEventListener("click", (function() {
+    for (const el of openEls) el.addEventListener("click", (function () {
         const modalId = this.dataset.open;
         document.getElementById(modalId).classList.add(isVisible);
         document.documentElement.classList.add("lock");
     }));
-    for (const el of closeEls) el.addEventListener("click", (function() {
+    for (const el of closeEls) el.addEventListener("click", (function () {
         stopPopup();
     }));
     document.addEventListener("click", (e => {
